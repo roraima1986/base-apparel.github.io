@@ -16,18 +16,49 @@
 </head>
 <body>
 
-  We're coming soon
+  <main class="main">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <!--Texto-->
+    <div class="main__left">
 
-  Email Address
+      <!--Logo-->
+      <header class="header">
+        <img src="./images/logo.svg" class="header__logo-img" alt="Base Apparel Logo" />
+      </header>
+
+      <!--Titulo-->
+      <h1 class="main__title">
+        <span class="title__highlight">We're</span> coming soon
+      </h1>
+
+      <!--Descripcion-->
+      <p class="main__description">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <!--Direccion de correo electronico-->
+      <form class="main__form">
+        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required />
+        <button type="submit" class="form__btn">
+          <img src="./images/icon-arrow.svg" class="form__btn-img" />
+        </button>
+      </form>
+      
+      <!--Pie de Página-->
+      <footer class="footer">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
+    </div>
+
+    <!--Imagen-->
+    <div class="main__right">
+      <img src="./images/hero-desktop.jpg" class="right__img" />
+    </div>
+
+  </main>  
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
