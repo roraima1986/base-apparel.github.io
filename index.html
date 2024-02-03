@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
-  <main class="main">
+  <main class="layout__main">
 
     <!--Texto-->
     <div class="main__left">
@@ -26,36 +27,44 @@
         <img src="./images/logo.svg" class="header__logo-img" alt="Base Apparel Logo" />
       </header>
 
-      <!--Titulo-->
-      <h1 class="main__title">
-        <span class="title__highlight">We're</span> coming soon
-      </h1>
-
-      <!--Descripcion-->
-      <p class="main__description">
-        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
-
-      <!--Direccion de correo electronico-->
-      <form class="main__form">
-        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required />
-        <button type="submit" class="form__btn">
-          <img src="./images/icon-arrow.svg" class="form__btn-img" />
-        </button>
-      </form>
       
-      <!--Pie de Página-->
-      <footer class="footer">
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Your Name Here</a>.
+      <section class="content">
+        <!--Titulo-->
+        <h1 class="content__title">
+          <span class="title__highlight">We're</span> coming soon
+        </h1>
+
+        <!--Descripcion-->
+        <p class="content__description">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-      </footer>
+
+        <!--Direccion de correo electronico-->
+        <form class="content__form">
+          <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off"  required />
+          <button type="submit" class="form__btn">
+            <img src="./images/icon-arrow.svg" class="form__btn-img" />
+          </button>
+        </form>
+        
+        <!--Pie de Página-->
+        <footer class="content__footer">
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Roraima Lugo</a>.
+          </p>
+        </footer>
+      </section>
+      
     </div>
 
     <!--Imagen-->
     <div class="main__right">
-      <img src="./images/hero-desktop.jpg" class="right__img" />
+      <picture class="right__container-img">
+        <source media="(max-width: 800px)" srcset="./images/hero-mobile.jpg"/>
+        <img src="./images/hero-desktop.jpg" class="right__img" />
+      </picture>
+      
     </div>
 
   </main>  
