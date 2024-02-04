@@ -17,57 +17,54 @@
 </head>
 <body>
 
-  <main class="layout__main">
+  <div class="layout">
+    <!--Header - Logo-->
+    <header class="header">
+      <img src="./images/logo.svg" class="header__logo-img" alt="Base Apparel Logo" />
+    </header>
+    
+    
+    <!--Contenido-->  
+    <main class="content"> 
 
-    <!--Texto-->
-    <div class="main__left">
+      <!--Titulo-->
+      <h1 class="content__title">
+        <span class="title__highlight">We're</span><br/> coming<br/> soon
+      </h1>
 
-      <!--Logo-->
-      <header class="header">
-        <img src="./images/logo.svg" class="header__logo-img" alt="Base Apparel Logo" />
-      </header>
+      <!--Descripcion-->
+      <p class="content__description">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
 
-      
-      <section class="content">
-        <!--Titulo-->
-        <h1 class="content__title">
-          <span class="title__highlight">We're</span> coming soon
-        </h1>
+      <!--Direccion de correo electronico-->
+      <form class="content__form">
+        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" required />
+        <img src="./images/icon-error.svg" class="form__icon-error" />
+        <p class="form__msg">Please provide a valid email</p>
+        <button type="submit" class="form__btn">
+          <img src="./images/icon-arrow.svg" class="form__btn-img" />
+        </button>
+      </form>     
+    </main>  
 
-        <!--Descripcion-->
-        <p class="content__description">
-          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-
-        <!--Direccion de correo electronico-->
-        <form class="content__form">
-          <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off"  required />
-          <button type="submit" class="form__btn">
-            <img src="./images/icon-arrow.svg" class="form__btn-img" />
-          </button>
-        </form>
-        
-        <!--Pie de Página-->
-        <footer class="content__footer">
-          <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Roraima Lugo</a>.
-          </p>
-        </footer>
-      </section>
-      
-    </div>
-
-    <!--Imagen-->
-    <div class="main__right">
-      <picture class="right__container-img">
+    <!--Aside - Imagen-->
+    <aside class="sidebar">
+      <picture class="sidebar__container-img">
         <source media="(max-width: 800px)" srcset="./images/hero-mobile.jpg"/>
-        <img src="./images/hero-desktop.jpg" class="right__img" />
-      </picture>
-      
-    </div>
+        <img src="./images/hero-desktop.jpg" class="sidebar__img" />
+      </picture>      
+    </aside>
 
-  </main>  
+    <!--Pie de Página-->
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Roraima Lugo</a>.
+      </p>
+    </footer>
+  </div>
+
   
 </body>
 </html>
