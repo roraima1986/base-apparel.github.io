@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/roraima1986/base-apparel.github.io)
-- Live Site URL: [Add live site URL here](https://roraima1986.github.io/base-apparel.github.io/)
+- Solution URL: [https://github.com/roraima1986/base-apparel.github.io](https://github.com/roraima1986/base-apparel.github.io)
+- Live Site URL: [https://roraima1986.github.io/base-apparel.github.io/](https://roraima1986.github.io/base-apparel.github.io/)
 
 ## My process
 
