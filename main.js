@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const emailInput = document.querySelector('#email')
-    const btn = document.querySelector('#form-btn')
+    const form = document.querySelector('.content__form')
     const iconError = document.querySelector(".form__icon-error")
     const msgError = document.querySelector(".form__msg")
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-    btn.addEventListener('click', e => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault()
 
         if(emailRegex.test(emailInput.value)) {

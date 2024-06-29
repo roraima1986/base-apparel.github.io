@@ -40,8 +40,8 @@
       </p>
 
       <!--Direccion de correo electronico-->
-      <form class="content__form">
-        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" />
+      <form class="content__form" novalidate autocomplete="off">
+        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required />
         <!--Mensaje en caso de error-->
         <img src="./images/icon-error.svg" class="form__icon-error" alt="Error Icon" />
         <p class="form__msg">Please provide a valid email</p>
